@@ -8,5 +8,10 @@ namespace Asp.Net_Core_Web_API.Utility
         {
             Console.WriteLine("Dependency Injection");
         }
+
+        public void WriteMessage()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

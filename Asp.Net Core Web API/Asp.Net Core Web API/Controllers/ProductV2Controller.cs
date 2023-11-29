@@ -14,12 +14,9 @@ namespace Asp.Net_Core_Web_API.Controllers
     {
         string? ProductsString { get; set; }
         List<Products>? ProductsList = new List<Products>();
-        private readonly IMessage _message;
-        public ProductV2Controller(IMessage message )
-        {
+        public ProductV2Controller()        {
             ProductsString = System.IO.File.ReadAllText(@"C:\Development\.net\Asp.Net Core Web API\Asp.Net Core Web API\Models\Products.txt");
-            ProductsList = JsonSerializer.Deserialize<List<Products>>(ProductsString);
-            _message = message;
+            ProductsList = JsonSerializer.Deserialize<List<Products>>(ProductsString);            
         }
 
         // GET: api/<ProductV2Controller>
@@ -97,11 +94,6 @@ namespace Asp.Net_Core_Web_API.Controllers
         {
             ProductsString = JsonSerializer.Serialize(ProductsList);
             System.IO.File.WriteAllText(@"C:\Development\.net\Asp.Net Core Web API\Asp.Net Core Web API\Models\Products.txt", ProductsString);
-        }
-
-        private void AddMessage()
-        {
-            _message.WriteMessage("DI");
         }
     }
 }
