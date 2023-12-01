@@ -10,11 +10,12 @@ namespace Asp.Net_Core_Web_API.Controllers
     [ApiController]
     public class ProductV3Controller : ControllerBase
     {
+                
         private IProduct product;
 
-        public ProductV3Controller(IProduct _product)
-        {
-            product= _product;
+        public ProductV3Controller(IProduct product)
+        {            
+            this.product= product;
         }
 
         // GET: api/<ProductV3Controller>

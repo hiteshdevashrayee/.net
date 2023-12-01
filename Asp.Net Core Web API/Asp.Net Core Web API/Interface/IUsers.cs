@@ -2,6 +2,6 @@
 {
     public interface IUsers: IRequest
     {
-
+        public string? userId { get; set; }
     }
 }

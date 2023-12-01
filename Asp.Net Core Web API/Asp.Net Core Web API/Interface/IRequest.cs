@@ -3,5 +3,7 @@
     public interface IRequest
     {
         public Guid RequestId { get;}
+
+        string GetId(string Id);
     }
 }

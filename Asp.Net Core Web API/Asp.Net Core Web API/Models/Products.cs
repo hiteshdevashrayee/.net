@@ -4,20 +4,24 @@ using System.Text.Json;
 
 namespace Asp.Net_Core_Web_API.Models
 {
-    public class Products : IProduct
+    public class Products:IProduct
     {
         public int ProductID { get; set; }
         public string? ProductName { get; set; }
         private string? ProductsJson { get; set; }
-
-        public Guid RequestId => new Guid();
+        private readonly IRequest request;
+        private readonly IApplication application;
+        private readonly IUsers users;
 
         List<ProductDTO>? ProductsList = new();
 
         //public delegate string GetCustomersDelegate(string productID);
 
-        public Products()
+        public Products(IRequest request, IApplication application, IUsers users, RequestService requestService)
         {
+            this.request = request;
+            this.application = application;
+            this.users = users;
             LoadProducts();
         }
 
@@ -41,8 +45,9 @@ namespace Asp.Net_Core_Web_API.Models
         {
             RequestDTO requestDTO = new RequestDTO();
             requestDTO.productList = ProductsList;
-            requestDTO.ApplicationID = 1;
-            requestDTO.UserID = 1;
+            requestDTO.ApplicationID = application.GetId(application.applicationId).ToString();
+            requestDTO.UserID = users.GetId(users.userId).ToString();
+            requestDTO.RequestId = request.GetId(request.RequestId.ToString()).ToString(); 
             ProductsJson = JsonSerializer.Serialize(requestDTO);
             return ProductsJson;
         }

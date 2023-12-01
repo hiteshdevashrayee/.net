@@ -2,7 +2,7 @@
 
 namespace Asp.Net_Core_Web_API.Interface
 {
-    public interface IProduct: IRequest
+    public interface IProduct
     {
         void LoadProducts();
         string GetProducts();
