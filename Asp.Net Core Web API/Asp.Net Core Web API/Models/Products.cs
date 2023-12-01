@@ -4,7 +4,7 @@ using System.Text.Json;
 
 namespace Asp.Net_Core_Web_API.Models
 {
-    public class Products: IProduct
+    public class Products : IProduct
     {
         public int ProductID { get; set; }
         public string? ProductName { get; set; }
@@ -17,11 +17,11 @@ namespace Asp.Net_Core_Web_API.Models
         //public delegate string GetCustomersDelegate(string productID);
 
         public Products()
-        {            
+        {
             LoadProducts();
         }
-        
-        public void LoadProducts()        
+
+        public void LoadProducts()
         {
 
             ProductsJson = System.IO.File.ReadAllText(@"C:\Development\.net\Asp.Net Core Web API\Asp.Net Core Web API\Models\Products.txt");
@@ -38,7 +38,12 @@ namespace Asp.Net_Core_Web_API.Models
             return JsonSerializer.Serialize(products);
         }
         public string GetProducts()
-        {            
+        {
+            RequestDTO requestDTO = new RequestDTO();
+            requestDTO.productList = ProductsList;
+            requestDTO.ApplicationID = 1;
+            requestDTO.UserID = 1;
+            ProductsJson = JsonSerializer.Serialize(requestDTO);
             return ProductsJson;
         }
         public void SetProducts(List<ProductDTO> ProductsList)
@@ -59,7 +64,7 @@ namespace Asp.Net_Core_Web_API.Models
 
         public void DeleteProducts(int Id)
         {
-            ProductDTO? products = ProductsList.FirstOrDefault(x => x.ProductID == Id);            
+            ProductDTO? products = ProductsList.FirstOrDefault(x => x.ProductID == Id);
             ProductsList.Remove(products);
             SetProducts(ProductsList);
         }
@@ -67,8 +72,9 @@ namespace Asp.Net_Core_Web_API.Models
         public void AddProducts(string value)
         {
             ProductDTO products = new ProductDTO();
+            products = new ProductDTO();
             products.ProductID = ProductsList.Count();
-            products.ProductName = value;           
+            products.ProductName = value;
             ProductsList.Add(products);
             SetProducts(ProductsList);
         }
