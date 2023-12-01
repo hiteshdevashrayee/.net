@@ -1,0 +1,6 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Asp.Net Core Web API/.vs/Asp.Net Core Web API/FileContentIndex
+/.gitignore
