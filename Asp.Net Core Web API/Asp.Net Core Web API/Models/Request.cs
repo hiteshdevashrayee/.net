@@ -1,5 +1,6 @@
 ﻿using Asp.Net_Core_Web_API.Interface;
 using System;
+using static Asp.Net_Core_Web_API.Models.Products;
 
 namespace Asp.Net_Core_Web_API.Models
 {
@@ -36,6 +37,17 @@ namespace Asp.Net_Core_Web_API.Models
             }
             return RequestId;
         }
+
+        //public string GetId(GetIdDelegate getIdDelegate, string Id)
+        //{
+        //    if (string.IsNullOrEmpty(Id))
+        //    {
+        //        Guid guid = Guid.NewGuid();
+        //        Id = guid.ToString();
+        //    }
+        //    return Id;
+        //}
+
     }
 
     public class RequestService

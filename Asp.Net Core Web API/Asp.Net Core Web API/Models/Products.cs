@@ -1,6 +1,7 @@
 ﻿using Asp.Net_Core_Web_API.Interface;
 using System.Collections.Generic;
 using System.Text.Json;
+using static Asp.Net_Core_Web_API.Models.Products;
 
 namespace Asp.Net_Core_Web_API.Models
 {
@@ -16,13 +17,14 @@ namespace Asp.Net_Core_Web_API.Models
         List<ProductDTO>? ProductsList = new();
 
         //public delegate string GetCustomersDelegate(string productID);
-
+        public delegate string GetIdDelegate(string id);
         public Products(IRequest request, IApplication application, IUsers users, RequestService requestService)
         {
             this.request = request;
             this.application = application;
             this.users = users;
             LoadProducts();
+            
         }
 
         public void LoadProducts()
@@ -43,10 +45,11 @@ namespace Asp.Net_Core_Web_API.Models
         }
         public string GetProducts()
         {
+            GetIdDelegate getIdDelegate = application.GetId, getIdDelegate1 = users.GetId;
             RequestDTO requestDTO = new RequestDTO();
             requestDTO.productList = ProductsList;
-            requestDTO.ApplicationID = application.GetId(application.applicationId).ToString();
-            requestDTO.UserID = users.GetId(users.userId).ToString();
+            requestDTO.ApplicationID = getIdDelegate(application.applicationId);
+            requestDTO.UserID = getIdDelegate1(users.userId);
             requestDTO.RequestId = request.GetId(request.RequestId.ToString()).ToString(); 
             ProductsJson = JsonSerializer.Serialize(requestDTO);
             return ProductsJson;
