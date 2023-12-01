@@ -1,0 +1,32 @@
+C:\Development\.net\Asp.Net Core Web API-I\ASP.NET Core Web API-II\bin\Debug\net6.0\appsettings.Development.json
+C:\Development\.net\Asp.Net Core Web API-I\ASP.NET Core Web API-II\bin\Debug\net6.0\appsettings.json
+C:\Development\.net\Asp.Net Core Web API-I\ASP.NET Core Web API-II\bin\Debug\net6.0\ASP.NET Core Web API-II.exe
+C:\Development\.net\Asp.Net Core Web API-I\ASP.NET Core Web API-II\bin\Debug\net6.0\ASP.NET Core Web API-II.deps.json
+C:\Development\.net\Asp.Net Core Web API-I\ASP.NET Core Web API-II\bin\Debug\net6.0\ASP.NET Core Web API-II.runtimeconfig.json
+C:\Development\.net\Asp.Net Core Web API-I\ASP.NET Core Web API-II\bin\Debug\net6.0\ASP.NET Core Web API-II.dll
+C:\Development\.net\Asp.Net Core Web API-I\ASP.NET Core Web API-II\bin\Debug\net6.0\ASP.NET Core Web API-II.pdb
+C:\Development\.net\Asp.Net Core Web API-I\ASP.NET Core Web API-II\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Development\.net\Asp.Net Core Web API-I\ASP.NET Core Web API-II\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Development\.net\Asp.Net Core Web API-I\ASP.NET Core Web API-II\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Development\.net\Asp.Net Core Web API-I\ASP.NET Core Web API-II\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Development\.net\Asp.Net Core Web API-I\ASP.NET Core Web API-II\obj\Debug\net6.0\ASP.NET Core Web API-II.csproj.AssemblyReference.cache
+C:\Development\.net\Asp.Net Core Web API-I\ASP.NET Core Web API-II\obj\Debug\net6.0\ASP.NET Core Web API-II.GeneratedMSBuildEditorConfig.editorconfig
+C:\Development\.net\Asp.Net Core Web API-I\ASP.NET Core Web API-II\obj\Debug\net6.0\ASP.NET Core Web API-II.AssemblyInfoInputs.cache
+C:\Development\.net\Asp.Net Core Web API-I\ASP.NET Core Web API-II\obj\Debug\net6.0\ASP.NET Core Web API-II.AssemblyInfo.cs
+C:\Development\.net\Asp.Net Core Web API-I\ASP.NET Core Web API-II\obj\Debug\net6.0\ASP.NET Core Web API-II.csproj.CoreCompileInputs.cache
+C:\Development\.net\Asp.Net Core Web API-I\ASP.NET Core Web API-II\obj\Debug\net6.0\ASP.NET Core Web API-II.MvcApplicationPartsAssemblyInfo.cs
+C:\Development\.net\Asp.Net Core Web API-I\ASP.NET Core Web API-II\obj\Debug\net6.0\ASP.NET Core Web API-II.MvcApplicationPartsAssemblyInfo.cache
+C:\Development\.net\Asp.Net Core Web API-I\ASP.NET Core Web API-II\obj\Debug\net6.0\staticwebassets\msbuild.ASP.NET Core Web API-II.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Development\.net\Asp.Net Core Web API-I\ASP.NET Core Web API-II\obj\Debug\net6.0\staticwebassets\msbuild.build.ASP.NET Core Web API-II.props
+C:\Development\.net\Asp.Net Core Web API-I\ASP.NET Core Web API-II\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ASP.NET Core Web API-II.props
+C:\Development\.net\Asp.Net Core Web API-I\ASP.NET Core Web API-II\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ASP.NET Core Web API-II.props
+C:\Development\.net\Asp.Net Core Web API-I\ASP.NET Core Web API-II\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Development\.net\Asp.Net Core Web API-I\ASP.NET Core Web API-II\obj\Debug\net6.0\staticwebassets.build.json
+C:\Development\.net\Asp.Net Core Web API-I\ASP.NET Core Web API-II\obj\Debug\net6.0\staticwebassets.development.json
+C:\Development\.net\Asp.Net Core Web API-I\ASP.NET Core Web API-II\obj\Debug\net6.0\scopedcss\bundle\ASP.NET Core Web API-II.styles.css
+C:\Development\.net\Asp.Net Core Web API-I\ASP.NET Core Web API-II\obj\Debug\net6.0\ASP.NET Core Web API-II.csproj.CopyComplete
+C:\Development\.net\Asp.Net Core Web API-I\ASP.NET Core Web API-II\obj\Debug\net6.0\ASP.NET Core Web API-II.dll
+C:\Development\.net\Asp.Net Core Web API-I\ASP.NET Core Web API-II\obj\Debug\net6.0\refint\ASP.NET Core Web API-II.dll
+C:\Development\.net\Asp.Net Core Web API-I\ASP.NET Core Web API-II\obj\Debug\net6.0\ASP.NET Core Web API-II.pdb
+C:\Development\.net\Asp.Net Core Web API-I\ASP.NET Core Web API-II\obj\Debug\net6.0\ASP.NET Core Web API-II.genruntimeconfig.cache
+C:\Development\.net\Asp.Net Core Web API-I\ASP.NET Core Web API-II\obj\Debug\net6.0\ref\ASP.NET Core Web API-II.dll

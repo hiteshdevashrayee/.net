@@ -8,25 +8,40 @@ namespace Asp.Net_Core_Web_API.Models
     {
         public int ProductID { get; set; }
         public string? ProductName { get; set; }
+        private string? ProductsJson { get; set; }
 
-        private string? ProductsJson = "none";
+        public Guid RequestId => new Guid();
 
-        List<Products> ProductsList =new List<Products>();
+        List<ProductDTO>? ProductsList = new();
+
+        //public delegate string GetCustomersDelegate(string productID);
+
         public Products()
+        {            
+            LoadProducts();
+        }
+        
+        public void LoadProducts()        
         {
+
             ProductsJson = System.IO.File.ReadAllText(@"C:\Development\.net\Asp.Net Core Web API\Asp.Net Core Web API\Models\Products.txt");
-            ProductsList = JsonSerializer.Deserialize<List<Products>>(ProductsJson);
+            if (string.IsNullOrEmpty(ProductsJson))
+            {
+                ProductsList = new List<ProductDTO>();
+            }
+            else
+                ProductsList = JsonSerializer.Deserialize<List<ProductDTO>>(ProductsJson);
         }
         public string GetProductById(int id)
         {
-            Products products = ProductsList.FirstOrDefault(x => x.ProductID == id);
+            ProductDTO? products = ProductsList.FirstOrDefault(x => x.ProductID == id);
             return JsonSerializer.Serialize(products);
         }
         public string GetProducts()
-        {
-           return ProductsJson;
+        {            
+            return ProductsJson;
         }
-        public void SetProducts(List<Products> ProductsList)
+        public void SetProducts(List<ProductDTO> ProductsList)
         {
             ProductsJson = JsonSerializer.Serialize(ProductsList);
             System.IO.File.WriteAllText(@"C:\Development\.net\Asp.Net Core Web API\Asp.Net Core Web API\Models\Products.txt", ProductsJson);
@@ -35,7 +50,7 @@ namespace Asp.Net_Core_Web_API.Models
         public void UpdateProducts(string value)
         {
             string[] strings = value.Split(',');
-            Products products = new Products();
+            ProductDTO products = new ProductDTO();
             products.ProductID = Convert.ToInt32(strings[0]);
             products.ProductName = strings[1];
             ProductsList.Add(products);
@@ -44,24 +59,23 @@ namespace Asp.Net_Core_Web_API.Models
 
         public void DeleteProducts(int Id)
         {
-            Products products = ProductsList.FirstOrDefault(x => x.ProductID == Id);
+            ProductDTO? products = ProductsList.FirstOrDefault(x => x.ProductID == Id);            
             ProductsList.Remove(products);
             SetProducts(ProductsList);
         }
 
         public void AddProducts(string value)
         {
-            string[] strings = value.Split(',');
-            Products products = new Products();
-            products.ProductID = Convert.ToInt32(strings[0]);
-            products.ProductName = strings[1];
+            ProductDTO products = new ProductDTO();
+            products.ProductID = ProductsList.Count();
+            products.ProductName = value;           
             ProductsList.Add(products);
             SetProducts(ProductsList);
         }
 
         public void UpdateProducts(int Id, string value)
         {
-            Products products = ProductsList.FirstOrDefault(x => x.ProductID == Id);
+            ProductDTO products = ProductsList.FirstOrDefault(x => x.ProductID == Id);
             products.ProductName = value;
             SetProducts(ProductsList);
         }
