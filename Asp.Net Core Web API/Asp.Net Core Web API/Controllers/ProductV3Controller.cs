@@ -1,5 +1,6 @@
 ﻿using Asp.Net_Core_Web_API.Interface;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using System.Linq.Expressions;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -12,10 +13,12 @@ namespace Asp.Net_Core_Web_API.Controllers
     {
                 
         private IProduct product;
+        private IConfiguration configuration;
 
-        public ProductV3Controller(IProduct product)
+        public ProductV3Controller(IProduct product, IConfiguration configuration)
         {            
             this.product= product;
+            this.configuration= configuration;
         }
 
         // GET: api/<ProductV3Controller>

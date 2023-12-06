@@ -30,3 +30,11 @@ C:\Development\.net\Asp.Net Core Web API\Asp.Net Core Web API\obj\Debug\net6.0\r
 C:\Development\.net\Asp.Net Core Web API\Asp.Net Core Web API\obj\Debug\net6.0\Asp.Net Core Web API.pdb
 C:\Development\.net\Asp.Net Core Web API\Asp.Net Core Web API\obj\Debug\net6.0\Asp.Net Core Web API.genruntimeconfig.cache
 C:\Development\.net\Asp.Net Core Web API\Asp.Net Core Web API\obj\Debug\net6.0\ref\Asp.Net Core Web API.dll
+C:\Development\.net\Asp.Net Core Web API\Asp.Net Core Web API\bin\Debug\net6.0\Dapper.dll
+C:\Development\.net\Asp.Net Core Web API\Asp.Net Core Web API\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Development\.net\Asp.Net Core Web API\Asp.Net Core Web API\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Development\.net\Asp.Net Core Web API\Asp.Net Core Web API\bin\Debug\net6.0\Npgsql.dll
+C:\Development\.net\Asp.Net Core Web API\Asp.Net Core Web API\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Development\.net\Asp.Net Core Web API\Asp.Net Core Web API\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\Development\.net\Asp.Net Core Web API\Asp.Net Core Web API\bin\Debug\net6.0\System.Text.Json.dll
+C:\Development\.net\Asp.Net Core Web API\Asp.Net Core Web API\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll

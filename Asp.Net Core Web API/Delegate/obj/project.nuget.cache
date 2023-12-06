@@ -1,8 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "fgSaoDMTHVMt3BjrU67lM9cRekoYKRa5g9Ijo7udel1uBUKPemsnojM8MN1WCR+mKqs4GcW1bM4ns1TaEHDzzw==",
+  "dgSpecHash": "7uFdC9D+1sABB65RdTuJYCkz2zXTsOnjr12INXc8ifxEGwdoVGCAKNBJ7grM8Dhi+e2NJ/8YGo09IA2gbOwleA==",
   "success": true,
   "projectFilePath": "C:\\Development\\.net\\Asp.Net Core Web API\\Delegate\\Delegate.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\hiteshd\\.nuget\\packages\\dapper\\2.1.24\\dapper.2.1.24.nupkg.sha512",
+    "C:\\Users\\hiteshd\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\hiteshd\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\hiteshd\\.nuget\\packages\\npgsql\\8.0.0\\npgsql.8.0.0.nupkg.sha512",
+    "C:\\Users\\hiteshd\\.nuget\\packages\\system.diagnostics.diagnosticsource\\8.0.0\\system.diagnostics.diagnosticsource.8.0.0.nupkg.sha512",
+    "C:\\Users\\hiteshd\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\hiteshd\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
+    "C:\\Users\\hiteshd\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

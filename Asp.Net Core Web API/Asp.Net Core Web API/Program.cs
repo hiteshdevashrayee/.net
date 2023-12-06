@@ -17,6 +17,7 @@ builder.Services.AddScoped<IUsers, Users>();
 builder.Services.AddTransient<IRequest, Request>();
 builder.Services.AddTransient<IProduct, Products>();
 builder.Services.AddTransient<RequestService, RequestService>();
+builder.Services.AddScoped<IDbContext, DbContext>();
 //builder.Services.AddScoped<IApplicationBuilder, ApplicationBuilder>();
 //builder.Services.AddScoped<IMessage, Message>();
 //builder.Services.AddOptions<DbConnection>();
