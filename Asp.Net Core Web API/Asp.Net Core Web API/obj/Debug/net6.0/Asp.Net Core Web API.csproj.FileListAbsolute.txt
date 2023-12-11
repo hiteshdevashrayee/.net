@@ -38,3 +38,12 @@ C:\Development\.net\Asp.Net Core Web API\Asp.Net Core Web API\bin\Debug\net6.0\S
 C:\Development\.net\Asp.Net Core Web API\Asp.Net Core Web API\bin\Debug\net6.0\System.Text.Encodings.Web.dll
 C:\Development\.net\Asp.Net Core Web API\Asp.Net Core Web API\bin\Debug\net6.0\System.Text.Json.dll
 C:\Development\.net\Asp.Net Core Web API\Asp.Net Core Web API\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Development\.net\Asp.Net Core Web API\Asp.Net Core Web API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Development\.net\Asp.Net Core Web API\Asp.Net Core Web API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Development\.net\Asp.Net Core Web API\Asp.Net Core Web API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Development\.net\Asp.Net Core Web API\Asp.Net Core Web API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Development\.net\Asp.Net Core Web API\Asp.Net Core Web API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Development\.net\Asp.Net Core Web API\Asp.Net Core Web API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Development\.net\Asp.Net Core Web API\Asp.Net Core Web API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Development\.net\Asp.Net Core Web API\Asp.Net Core Web API\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+C:\Development\.net\Asp.Net Core Web API\Asp.Net Core Web API\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll

@@ -1,6 +1,8 @@
 ﻿using Asp.Net_Core_Web_API.Interface;
 using Asp.Net_Core_Web_API.Models;
 using Dapper;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Data.Common;
 using System.Text.Json;
@@ -9,8 +11,10 @@ using System.Text.Json;
 
 namespace Asp.Net_Core_Web_API.Controllers
 {
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [Route("api/[controller]")]
     [ApiController]
+    [ApiVersion("4.0")]
     public class ProductV4Controller : ControllerBase
     {
         private readonly IDbContext dbContext;

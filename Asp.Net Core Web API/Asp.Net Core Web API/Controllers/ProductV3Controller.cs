@@ -9,6 +9,7 @@ namespace Asp.Net_Core_Web_API.Controllers
 {
     [Route("api/v3/[controller]")]
     [ApiController]
+    [ApiVersion("3.0")]
     public class ProductV3Controller : ControllerBase
     {
                 

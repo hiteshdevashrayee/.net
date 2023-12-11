@@ -1,0 +1,45 @@
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\bin\Debug\net6.0\appsettings.Development.json
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\bin\Debug\net6.0\appsettings.json
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\bin\Debug\net6.0\ASP .NET Core Web API-1.0.exe
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\bin\Debug\net6.0\ASP .NET Core Web API-1.0.deps.json
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\bin\Debug\net6.0\ASP .NET Core Web API-1.0.runtimeconfig.json
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\bin\Debug\net6.0\ASP .NET Core Web API-1.0.dll
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\bin\Debug\net6.0\ASP .NET Core Web API-1.0.pdb
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\obj\Debug\net6.0\ASP .NET Core Web API-1.0.csproj.AssemblyReference.cache
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\obj\Debug\net6.0\ASP .NET Core Web API-1.0.GeneratedMSBuildEditorConfig.editorconfig
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\obj\Debug\net6.0\ASP .NET Core Web API-1.0.AssemblyInfoInputs.cache
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\obj\Debug\net6.0\ASP .NET Core Web API-1.0.AssemblyInfo.cs
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\obj\Debug\net6.0\ASP .NET Core Web API-1.0.csproj.CoreCompileInputs.cache
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\obj\Debug\net6.0\ASP .NET Core Web API-1.0.MvcApplicationPartsAssemblyInfo.cs
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\obj\Debug\net6.0\ASP .NET Core Web API-1.0.MvcApplicationPartsAssemblyInfo.cache
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\obj\Debug\net6.0\staticwebassets\msbuild.ASP .NET Core Web API-1.0.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\obj\Debug\net6.0\staticwebassets\msbuild.build.ASP .NET Core Web API-1.0.props
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.ASP .NET Core Web API-1.0.props
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.ASP .NET Core Web API-1.0.props
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\obj\Debug\net6.0\staticwebassets.build.json
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\obj\Debug\net6.0\staticwebassets.development.json
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\obj\Debug\net6.0\scopedcss\bundle\ASP .NET Core Web API-1.0.styles.css
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\obj\Debug\net6.0\ASP .NET Core Web API-1.0.csproj.CopyComplete
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\obj\Debug\net6.0\ASP .NET Core Web API-1.0.dll
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\obj\Debug\net6.0\refint\ASP .NET Core Web API-1.0.dll
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\obj\Debug\net6.0\ASP .NET Core Web API-1.0.pdb
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\obj\Debug\net6.0\ASP .NET Core Web API-1.0.genruntimeconfig.cache
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\obj\Debug\net6.0\ref\ASP .NET Core Web API-1.0.dll
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\bin\Debug\net6.0\Dapper.dll
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer.dll
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
