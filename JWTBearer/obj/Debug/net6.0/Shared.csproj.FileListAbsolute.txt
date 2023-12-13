@@ -1,0 +1,5 @@
+C:\Development\.net\JWTBearer\obj\Debug\net6.0\Shared.csproj.AssemblyReference.cache
+C:\Development\.net\JWTBearer\obj\Debug\net6.0\Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Development\.net\JWTBearer\obj\Debug\net6.0\Shared.AssemblyInfoInputs.cache
+C:\Development\.net\JWTBearer\obj\Debug\net6.0\Shared.AssemblyInfo.cs
+C:\Development\.net\JWTBearer\obj\Debug\net6.0\Shared.csproj.CoreCompileInputs.cache

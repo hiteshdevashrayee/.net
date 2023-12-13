@@ -1,0 +1,39 @@
+C:\Development\.net\Asp.Net Core\Asp.Net Core\bin\Debug\net6.0\appsettings.Development.json
+C:\Development\.net\Asp.Net Core\Asp.Net Core\bin\Debug\net6.0\appsettings.json
+C:\Development\.net\Asp.Net Core\Asp.Net Core\bin\Debug\net6.0\Asp.Net Core.exe
+C:\Development\.net\Asp.Net Core\Asp.Net Core\bin\Debug\net6.0\Asp.Net Core.deps.json
+C:\Development\.net\Asp.Net Core\Asp.Net Core\bin\Debug\net6.0\Asp.Net Core.runtimeconfig.json
+C:\Development\.net\Asp.Net Core\Asp.Net Core\bin\Debug\net6.0\Asp.Net Core.dll
+C:\Development\.net\Asp.Net Core\Asp.Net Core\bin\Debug\net6.0\Asp.Net Core.pdb
+C:\Development\.net\Asp.Net Core\Asp.Net Core\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Development\.net\Asp.Net Core\Asp.Net Core\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Development\.net\Asp.Net Core\Asp.Net Core\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Development\.net\Asp.Net Core\Asp.Net Core\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Development\.net\Asp.Net Core\Asp.Net Core\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Development\.net\Asp.Net Core\Asp.Net Core\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Development\.net\Asp.Net Core\Asp.Net Core\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Development\.net\Asp.Net Core\Asp.Net Core\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Development\.net\Asp.Net Core\Asp.Net Core\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Development\.net\Asp.Net Core\Asp.Net Core\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Development\.net\Asp.Net Core\Asp.Net Core\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Development\.net\Asp.Net Core\Asp.Net Core\obj\Debug\net6.0\Asp.Net Core.csproj.AssemblyReference.cache
+C:\Development\.net\Asp.Net Core\Asp.Net Core\obj\Debug\net6.0\Asp.Net Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Development\.net\Asp.Net Core\Asp.Net Core\obj\Debug\net6.0\Asp.Net Core.AssemblyInfoInputs.cache
+C:\Development\.net\Asp.Net Core\Asp.Net Core\obj\Debug\net6.0\Asp.Net Core.AssemblyInfo.cs
+C:\Development\.net\Asp.Net Core\Asp.Net Core\obj\Debug\net6.0\Asp.Net Core.csproj.CoreCompileInputs.cache
+C:\Development\.net\Asp.Net Core\Asp.Net Core\obj\Debug\net6.0\Asp.Net Core.MvcApplicationPartsAssemblyInfo.cs
+C:\Development\.net\Asp.Net Core\Asp.Net Core\obj\Debug\net6.0\Asp.Net Core.MvcApplicationPartsAssemblyInfo.cache
+C:\Development\.net\Asp.Net Core\Asp.Net Core\obj\Debug\net6.0\staticwebassets\msbuild.Asp.Net Core.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Development\.net\Asp.Net Core\Asp.Net Core\obj\Debug\net6.0\staticwebassets\msbuild.build.Asp.Net Core.props
+C:\Development\.net\Asp.Net Core\Asp.Net Core\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Asp.Net Core.props
+C:\Development\.net\Asp.Net Core\Asp.Net Core\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Asp.Net Core.props
+C:\Development\.net\Asp.Net Core\Asp.Net Core\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Development\.net\Asp.Net Core\Asp.Net Core\obj\Debug\net6.0\staticwebassets.build.json
+C:\Development\.net\Asp.Net Core\Asp.Net Core\obj\Debug\net6.0\staticwebassets.development.json
+C:\Development\.net\Asp.Net Core\Asp.Net Core\obj\Debug\net6.0\scopedcss\bundle\Asp.Net Core.styles.css
+C:\Development\.net\Asp.Net Core\Asp.Net Core\obj\Debug\net6.0\Asp.Net Core.csproj.CopyComplete
+C:\Development\.net\Asp.Net Core\Asp.Net Core\obj\Debug\net6.0\Asp.Net Core.dll
+C:\Development\.net\Asp.Net Core\Asp.Net Core\obj\Debug\net6.0\refint\Asp.Net Core.dll
+C:\Development\.net\Asp.Net Core\Asp.Net Core\obj\Debug\net6.0\Asp.Net Core.pdb
+C:\Development\.net\Asp.Net Core\Asp.Net Core\obj\Debug\net6.0\Asp.Net Core.genruntimeconfig.cache
+C:\Development\.net\Asp.Net Core\Asp.Net Core\obj\Debug\net6.0\ref\Asp.Net Core.dll
