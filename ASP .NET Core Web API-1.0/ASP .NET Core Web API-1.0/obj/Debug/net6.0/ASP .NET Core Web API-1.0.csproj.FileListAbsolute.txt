@@ -48,3 +48,5 @@ C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\bin\Debu
 C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\bin\Debug\net6.0\System.Text.Encodings.Web.dll
 C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\bin\Debug\net6.0\System.Text.Json.dll
 C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\bin\Debug\net6.0\JWTLibrary.dll
+C:\Development\.net\ASP .NET Core Web API-1.0\ASP .NET Core Web API-1.0\bin\Debug\net6.0\JWTLibrary.pdb

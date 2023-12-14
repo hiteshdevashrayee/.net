@@ -25,4 +25,8 @@
     <Folder Include="Interface\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\JWTLibrary\JWTLibrary.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -10,6 +10,7 @@ using System.Text;
 namespace WebApi_I.Controllers
 {
     [Route("[controller]")]
+    [ApiController]
     public class OAuthController : Controller
     {
         private readonly JWTBearerSettings jwtBearerSettingsValue;
@@ -21,7 +22,7 @@ namespace WebApi_I.Controllers
         [HttpPost("token"), Consumes("application/x-www-form-urlencoded")]
         public IActionResult Token([FromForm(Name = "grant_type")] string grantType)
         {
-            if (grantType.Equals("client_cridentials"))
+            if (!grantType.Equals("hiteshd@webgility.com"))
             {
                 return BadRequest();
             }

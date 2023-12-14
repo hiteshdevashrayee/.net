@@ -432,6 +432,16 @@
         "build": {
           "buildTransitive/net6.0/System.Text.Json.targets": {}
         }
+      },
+      "JWTLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/JWTLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/JWTLibrary.dll": {}
+        }
       }
     }
   },
@@ -1179,11 +1189,17 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "JWTLibrary/1.0.0": {
+      "type": "project",
+      "path": "../JWTLibrary/JWTLibrary.csproj",
+      "msbuildProject": "../JWTLibrary/JWTLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "Dapper >= 2.1.24",
+      "JWTLibrary >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 6.0.25",
       "Microsoft.AspNetCore.Mvc.Versioning >= 5.1.0",
       "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer >= 5.1.0",
@@ -1222,7 +1238,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Development\\.net\\ASP .NET Core Web API-1.0\\JWTLibrary\\JWTLibrary.csproj": {
+              "projectPath": "C:\\Development\\.net\\ASP .NET Core Web API-1.0\\JWTLibrary\\JWTLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

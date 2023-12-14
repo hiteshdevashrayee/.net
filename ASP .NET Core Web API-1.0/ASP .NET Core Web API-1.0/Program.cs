@@ -11,6 +11,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 using Microsoft.OpenApi.Models;
+using JWTLibrary;
 
 var builder = WebApplication.CreateBuilder(args);
 var config = builder.Configuration;
@@ -21,89 +22,146 @@ var token = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("1234567890abcdefghi
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-
-builder.Services.AddAuthorization();
-//builder.Services.AddAuthentication().AddJwtBearer();
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme
-//options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-//options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-//options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
-).AddJwtBearer(JWT =>
-{
-    JWT.RequireHttpsMetadata = false;
-    JWT.SaveToken = true;
-
-    JWT.TokenValidationParameters = new TokenValidationParameters()
-    {
-        //ValidIssuer = tokenOptions.AuthenticatorIssuer,
-        //IssuerSigningKey = SignService.GetSymmetricSecurityKey(tokenOptions.SecurityKey),
-        //ValidIssuer = builder.Configuration["AppSettings:JWTIssuer"],
-        //ValidAudience = builder.Configuration["AppSettings:JWTAudience"],
-        //ValidateLifetime = true,
-        //ClockSkew = TimeSpan.Zero
-
-        ValidateIssuerSigningKey = true,
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("1234567890abcdefghijklmnopqrstuvwxyz")),
-        ValidateIssuer = false,
-        ValidateAudience = false,
-        RequireExpirationTime = false,
-    };
-});
-var securityScheme = new OpenApiSecurityScheme()
-{
-    Description = "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\"",
-    Name = "Authorization",
-    In = ParameterLocation.Header,
-    Scheme = "Bearer",
-    //Type = SecuritySchemeType.Http,
-    Type = Microsoft.OpenApi.Models.SecuritySchemeType.ApiKey,
-    BearerFormat = "JWT" // Optional
-};
-
-var securityRequirement = new OpenApiSecurityRequirement
-{
-    {
-        new OpenApiSecurityScheme
-        {
-            Reference = new OpenApiReference
-            {
-                Type = ReferenceType.SecurityScheme,
-                Id = "Bearer"
-            }
-        },
-        new string[] {}
-    }
-};
 builder.Services.AddSwaggerGen(options =>
 {
-    //options.SwaggerDoc("v1", new OpenApiInfo { Title = "Demo API", Version = "v1" });
-    options.AddSecurityDefinition("bearer", securityScheme);
-    options.AddSecurityRequirement(securityRequirement);
-    //options.AddSecurityDefinition("Bearer,", 
-    //    new OpenApiSecurityScheme
-    //    {
-    //        Description = "JWT Authorization",
-    //        Name = "Authorization",        
-    //        In = ParameterLocation.Header,
-    //        Scheme = "Bearer",
-    //        Type = SecuritySchemeType.ApiKey,
-    //        BearerFormat = "JWT"
-    //    });
-    //options.AddSecurityRequirement(new OpenApiSecurityRequirement
-    //{
-    //    {
-    //        new OpenApiSecurityScheme
-    //        {
-    //            Reference = new OpenApiReference
-    //            {
-    //                Type = ReferenceType.SecurityScheme,
-    //                Id = "Bearer"
-    //            }
-    //        },
-    //       new List<string>()
-    //    }
-    //});
+    options.AddSecurityDefinition(JwtBearerDefaults.AuthenticationScheme,
+        new Microsoft.OpenApi.Models.OpenApiSecurityScheme()
+        {
+            Name = "Authorization",
+            In = ParameterLocation.Header,
+            Type = SecuritySchemeType.Http,
+            BearerFormat = "JWT",
+            Scheme = JwtBearerDefaults.AuthenticationScheme,
+            Description = "JWT Authorization header using the Bearer scheme."
+        }
+        );
+    options.AddSecurityRequirement(new OpenApiSecurityRequirement {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = JwtBearerDefaults.AuthenticationScheme
+                }
+            },
+            new string[]{"Bearer "}
+        }
+    });
 });
+builder.Services.AddAuthentication(options =>
+{
+    //options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+    //options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+    .AddScheme<JwtBearerOptions, JwtBearerHandler>(JwtBearerDefaults.AuthenticationScheme, options =>
+    {
+        var jwtBearerSettings = builder.Configuration.GetSection("JWTBearer").Get<JWTBearerSettings>();
+
+        if (jwtBearerSettings == null)
+        {
+            throw new NullReferenceException();
+        }
+
+        options.SaveToken = true;
+        options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens
+        .TokenValidationParameters()
+        {
+            ValidIssuer = jwtBearerSettings.Issuer,
+            ValidAudience = jwtBearerSettings.Audience,
+            IssuerSigningKey = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes(jwtBearerSettings.SigningKey)
+                ),
+            ClockSkew = TimeSpan.Zero,
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateIssuerSigningKey = true
+        };
+
+    });
+
+//builder.Services.AddAuthorization();
+//builder.Services.AddAuthentication().AddJwtBearer();
+//builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme
+////options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+////options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+////options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+//).AddJwtBearer(JWT =>
+//{
+//    JWT.RequireHttpsMetadata = false;
+//    JWT.SaveToken = true;
+
+//    JWT.TokenValidationParameters = new TokenValidationParameters()
+//    {
+//        //ValidIssuer = tokenOptions.AuthenticatorIssuer,
+//        //IssuerSigningKey = SignService.GetSymmetricSecurityKey(tokenOptions.SecurityKey),
+//        //ValidIssuer = builder.Configuration["AppSettings:JWTIssuer"],
+//        //ValidAudience = builder.Configuration["AppSettings:JWTAudience"],
+//        //ValidateLifetime = true,
+//        //ClockSkew = TimeSpan.Zero
+
+//        ValidateIssuerSigningKey = true,
+//        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("1234567890abcdefghijklmnopqrstuvwxyz")),
+//        ValidateIssuer = false,
+//        ValidateAudience = false,
+//        RequireExpirationTime = false,
+//    };
+//});
+//var securityScheme = new OpenApiSecurityScheme()
+//{
+//    Description = "JWT Authorization header using the Bearer scheme. Example: \"Authorization: Bearer {token}\"",
+//    Name = "Authorization",
+//    In = ParameterLocation.Header,
+//    Scheme = "Bearer",
+//    //Type = SecuritySchemeType.Http,
+//    Type = Microsoft.OpenApi.Models.SecuritySchemeType.ApiKey,
+//    BearerFormat = "JWT" // Optional
+//};
+
+//var securityRequirement = new OpenApiSecurityRequirement
+//{
+//    {
+//        new OpenApiSecurityScheme
+//        {
+//            Reference = new OpenApiReference
+//            {
+//                Type = ReferenceType.SecurityScheme,
+//                Id = "Bearer"
+//            }
+//        },
+//        new string[] {}
+//    }
+//};
+//builder.Services.AddSwaggerGen(options =>
+//{
+//    //options.SwaggerDoc("v1", new OpenApiInfo { Title = "Demo API", Version = "v1" });
+//    options.AddSecurityDefinition("bearer", securityScheme);
+//    options.AddSecurityRequirement(securityRequirement);
+//    //options.AddSecurityDefinition("Bearer,", 
+//    //    new OpenApiSecurityScheme
+//    //    {
+//    //        Description = "JWT Authorization",
+//    //        Name = "Authorization",        
+//    //        In = ParameterLocation.Header,
+//    //        Scheme = "Bearer",
+//    //        Type = SecuritySchemeType.ApiKey,
+//    //        BearerFormat = "JWT"
+//    //    });
+//    //options.AddSecurityRequirement(new OpenApiSecurityRequirement
+//    //{
+//    //    {
+//    //        new OpenApiSecurityScheme
+//    //        {
+//    //            Reference = new OpenApiReference
+//    //            {
+//    //                Type = ReferenceType.SecurityScheme,
+//    //                Id = "Bearer"
+//    //            }
+//    //        },
+//    //       new List<string>()
+//    //    }
+//    //});
+//});
 //builder.Services.AddAuthentication("Bearer").AddJwtBearer();
 
 #region API Versioning
@@ -128,7 +186,9 @@ builder.Services.AddVersionedApiExplorer(setup =>
 
 builder.Services.ConfigureOptions<ConfigureSwaggerOptions>();
 #endregion
-
+builder.Services.AddOptions<JWTBearerSettings>()
+    .Bind(builder.Configuration.GetSection("JWTBearer"))
+    .ValidateDataAnnotations();
 var app = builder.Build();
 var provider = app.Services.GetRequiredService<IApiVersionDescriptionProvider>();
 // Configure the HTTP request pipeline.

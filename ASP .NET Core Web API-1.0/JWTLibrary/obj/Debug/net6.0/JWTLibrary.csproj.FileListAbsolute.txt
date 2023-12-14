@@ -1,0 +1,12 @@
+C:\Development\.net\ASP .NET Core Web API-1.0\JWTLibrary\bin\Debug\net6.0\JWTLibrary.deps.json
+C:\Development\.net\ASP .NET Core Web API-1.0\JWTLibrary\bin\Debug\net6.0\JWTLibrary.dll
+C:\Development\.net\ASP .NET Core Web API-1.0\JWTLibrary\bin\Debug\net6.0\JWTLibrary.pdb
+C:\Development\.net\ASP .NET Core Web API-1.0\JWTLibrary\obj\Debug\net6.0\JWTLibrary.csproj.AssemblyReference.cache
+C:\Development\.net\ASP .NET Core Web API-1.0\JWTLibrary\obj\Debug\net6.0\JWTLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Development\.net\ASP .NET Core Web API-1.0\JWTLibrary\obj\Debug\net6.0\JWTLibrary.AssemblyInfoInputs.cache
+C:\Development\.net\ASP .NET Core Web API-1.0\JWTLibrary\obj\Debug\net6.0\JWTLibrary.AssemblyInfo.cs
+C:\Development\.net\ASP .NET Core Web API-1.0\JWTLibrary\obj\Debug\net6.0\JWTLibrary.csproj.CoreCompileInputs.cache
+C:\Development\.net\ASP .NET Core Web API-1.0\JWTLibrary\obj\Debug\net6.0\JWTLibrary.dll
+C:\Development\.net\ASP .NET Core Web API-1.0\JWTLibrary\obj\Debug\net6.0\refint\JWTLibrary.dll
+C:\Development\.net\ASP .NET Core Web API-1.0\JWTLibrary\obj\Debug\net6.0\JWTLibrary.pdb
+C:\Development\.net\ASP .NET Core Web API-1.0\JWTLibrary\obj\Debug\net6.0\ref\JWTLibrary.dll

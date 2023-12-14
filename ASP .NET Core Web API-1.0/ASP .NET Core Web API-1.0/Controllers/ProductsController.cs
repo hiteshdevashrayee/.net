@@ -17,7 +17,7 @@ namespace ASP_.NET_Core_Web_API_1._0.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new string[] { "Product1", "Product2" };
         }
 
         // GET api/<ProductsController>/5

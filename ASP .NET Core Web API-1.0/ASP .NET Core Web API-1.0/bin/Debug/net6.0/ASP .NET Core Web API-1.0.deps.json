@@ -9,6 +9,7 @@
       "ASP .NET Core Web API-1.0/1.0.0": {
         "dependencies": {
           "Dapper": "2.1.24",
+          "JWTLibrary": "1.0.0",
           "Microsoft.AspNetCore.Authentication.JwtBearer": "6.0.25",
           "Microsoft.AspNetCore.Mvc.Versioning": "5.1.0",
           "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer": "5.1.0",
@@ -260,6 +261,11 @@
             "fileVersion": "7.0.723.27404"
           }
         }
+      },
+      "JWTLibrary/1.0.0": {
+        "runtime": {
+          "JWTLibrary.dll": {}
+        }
       }
     }
   },
@@ -450,6 +456,11 @@
       "sha512": "sha512-AyjhwXN1zTFeIibHimfJn6eAsZ7rTBib79JQpzg8WAuR/HKDu9JGNHTuu3nbbXQ/bgI+U4z6HtZmCHNXB1QXrQ==",
       "path": "system.text.json/7.0.3",
       "hashPath": "system.text.json.7.0.3.nupkg.sha512"
+    },
+    "JWTLibrary/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

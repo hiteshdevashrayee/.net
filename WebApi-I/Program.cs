@@ -40,8 +40,8 @@ builder.Services.AddSwaggerGen(options =>
 });
 builder.Services.AddAuthentication(options =>
 {
-    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    //options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+    //options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
 })
     .AddScheme<JwtBearerOptions, JwtBearerHandler>(JwtBearerDefaults.AuthenticationScheme, options =>
     {
@@ -85,6 +85,6 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-app.MapControllers().RequireAuthorization();
-
+//app.MapControllers().RequireAuthorization();
+app.MapControllers();
 app.Run();
